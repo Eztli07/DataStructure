@@ -7,5 +7,10 @@ public class Main
         deck.add("Heart");
         deck.add("Club");
         deck.add("Diamond");
+
+        for (String c : deck)
+        {
+            System.out.println(c);
+        }
     }
 }
