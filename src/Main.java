@@ -12,5 +12,23 @@ public class Main
         {
             System.out.println(c);
         }
+        System.out.println();
+
+        deck.push("Spade");
+
+        for (String c : deck)
+        {
+            System.out.println(c);
+        }
+        System.out.println();
+
+        deck.pop();
+        deck.remove("Diamond");
+
+        for (String c : deck)
+        {
+            System.out.println(c);
+        }
+        System.out.println();
     }
 }
