@@ -1,10 +1,12 @@
-import junit.framework.TestCase;
+import org.junit.Test;
 import java.util.*;
+
 
 import java.util.LinkedList;
 
-public class NodeTest extends Main {
+public class NodeTest {
 
+    @Test
     public void testAddAce()
     {
         Deque<String> deck = new LinkedList<>();
@@ -12,6 +14,7 @@ public class NodeTest extends Main {
         assert (deck.peekFirst() == "Ace");
     }
 
+    @Test
     public void testAddKing()
     {
         Deque<String> deck = new LinkedList<>();
@@ -19,6 +22,7 @@ public class NodeTest extends Main {
         assert (deck.peekLast() == "King");
     }
 
+    @Test
     public void testRemoveAce()
     {
         Deque<String> deck = new LinkedList<>();
@@ -26,6 +30,7 @@ public class NodeTest extends Main {
         assert (deck.peekFirst() != "Ace");
     }
 
+    @Test
     public void testRemoveKing()
     {
         Deque<String> deck = new LinkedList<>();
